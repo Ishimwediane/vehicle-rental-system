@@ -5,18 +5,18 @@ class RentalSystem:
     def add_vehicle(self,vehicle):
         self.vehicles.append(vehicle)
     
-    def display_available_vehicles(self):
+    def show_available(self):
         print("Available Vehicles:")
         for vehicle in self.vehicles:
-            if not vehicle._is_rented():
+            if not vehicle.is_rented:
                 print(vehicle)
     def display_rented_vehicles(self):
         print("Rented Vehicles:")
         for vehicle in self.vehicles:
-            if vehicle._is_rented():
+            if vehicle.is_rented:
                 print(vehicle)
                 
-    def display_all_vehicles(self):
+    def show_all(self):
         print("All Vehicles:")
         for vehicle in self.vehicles:
             print(vehicle)

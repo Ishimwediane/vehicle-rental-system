@@ -1,6 +1,6 @@
 from .vehicle import Vehicle
 
-class Car(Vehicle):
+class Bike(Vehicle):
     def __init__(self,vehicle_id,brand,base_price):
         super().__init__(vehicle_id,brand,base_price)   
     
